@@ -1,0 +1,210 @@
+%!TEX program = xelatex
+
+%------------------------------------------------------------------------------
+
+\documentclass[A4,10pt]{ctexart}
+%\documentclass[letterpaper,11pt]{article} %For use in US
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+% \usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+% \input{glyphtounicode}
+%-----FONT OPTIONS-------------------------------------------------------------
+
+
+
+% serif
+%  \usepackage{palatino}
+%  \usepackage{times} %This is the default as well
+%  \usepackage{charter}
+
+% sans-serif
+% \usepackage{helvet}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+%-----PAGE SETUP---------------------------------------------------------------
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{1cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textheight}{2cm}
+
+% Margins for US Letter size
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+% \setlength{\baselineskip}{-10pt}
+% % Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+%------------------------------------------------------------------------------
+\begin{document}
+
+%-----HEADING------------------------------------------------------------------
+
+
+\begin{minipage}[c]{0.05\textwidth}
+\-\
+\end{minipage}
+\begin{minipage}[c]{0.12\textwidth}
+ \begin{tikzpicture}
+%     \clip (0,0) circle (1.75cm);
+     \node at (2,-2) {\includegraphics[width = 1.7cm]{me}}; 
+%     % if necessary the picture may be moved by changing the at (coordinates)
+%     % width defines the 'zoom' of the picture
+% \includegraphics[width=0.75\textwidth]{me.jpg}
+\end{tikzpicture}
+\hfill\vline\hfill
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+    \textbf{\Huge \scshape{陈刘军}} 
+    
+    \vspace{5pt} 
+
+    \small{出生日期： 1996/05/12}
+
+    \vspace{1pt}
+
+    % \scshape sets small capital letters, remove if desired
+    \small{联系电话: +86 183-2171-5226}
+
+    \vspace{1pt} 
+    电子邮箱:  \href{mailto:ljchen@fudan.edu.cn}{ljchen@fudan.edu.cn}
+
+    \vspace{1pt}
+    % Be sure to use a professional *personal* email address
+    个人主页：\href{https://ljunchen.github.io/Resume/}{https://ljunchen.github.io/Resume/}： \\
+    % you should adjust you linked in profile name to be professional and recognizable
+    % \href{https://scholar.google.com/citations?user=tbbGLT4AAAAJ&hl=en}{Google Scholar}
+\end{minipage}
+
+
+
+
+
+
+
+%-----EDUCATION----------------------------------------------------------------
+\section{教育北京}
+\begin{itemize}[leftmargin=2ex]
+    \setlength{\itemsep}{-3pt} 
+    \item 2017.9 至今 
+
+    \vspace{-1ex}
+
+\quad 统计学，博士候选人， 复旦大学管理学院
+
+\vspace{-1ex}
+
+\quad 导师：黎德元教授
+
+\item 2013.9-2017.6
+
+\vspace{-1ex}
+
+\quad 统计学，本科，复旦大学管理学院
+\end{itemize}
+
+
+
+
+
+
+\section{研究兴趣}
+\begin{itemize}[leftmargin=2ex]
+    \setlength{\itemsep}{-3pt} 
+    \item 极值理论
+    \item 分布式统计推断
+    \item 金融风险管理
+\end{itemize}
+\section{近期科研成果}
+\begin{enumerate}[leftmargin=2ex]
+    \setlength{\itemsep}{-3pt} 
+    \item {\bf Chen, L.}, Li, D. and Zhou C. (2021) Distributed inference for extreme value index. {\it Biometrika}, accepted.
+   
+    \item {\bf Chen, L.}, Li, D. and Zhou C. (2021) Asymptotic unbiased distributed estimator for extreme value index. Submitted.
+
+    \item Li, Y., {\bf Chen, L.}, Li, D. and Wang H. (2020) \href{https://arxiv.org/abs/2007.02037}{Estimating extreme value index by subsampling for massive datasets with heavy-tailed distributions.} Submitted.
+\end{enumerate}
+
+
+
+\section{项目与实习经历}
+\begin{itemize}[leftmargin=2ex]
+    \setlength{\itemsep}{-3pt} 
+\item 2019.09-2020.03
+\quad 海关进出口风险管理
+  \vspace{-1ex}
+  
+\quad 项目，中国海关总署， 地点：北京 
+
+\item 2017.09-2017.12
+\quad 中国大陆的空气质量 (AQI) 预测
+
+\vspace{-1ex}
+
+
+\quad 实习，北京心知科技有限公司，地点：北京
+
+
+
+\item 2016.08-2016.12
+\quad 癌症数据的元分析
+
+\vspace{-1ex}
+
+
+\quad 实习，上海交复生物医药，地点：上海 
+
+\end{itemize}
+
+%-----HONORS AND AWARDS--------------------------------------------------------
+% \section{荣誉与}
+
+% \begin{itemize}[leftmargin=2ex]
+%     \setlength{\itemsep}{3pt} 
+%     \item Huawei Scholarship
+%     \vspace{-1ex}
+%     \item Outstanding Scholorship in Fudan University
+% \end{itemize}
+
+\section{学术会议}
+\begin{itemize}[leftmargin=2ex]
+    \item 第12次极值大会， 2021年6月28日-7月1日。
+\end{itemize}
+%-----TEACHING EXPERIENCE------------------------------------------------------
+
+
+
+%-----SKILLS-------------------------------------------------------------------
+
+\section{技能}
+ \begin{itemize}[leftmargin=2ex]
+  \setlength{\itemsep}{-3pt} 
+    \item 编程能力： 熟练使用 Python 和 R
+    \item 证书: CFA level III 候选人
+ \end{itemize}
+    
+%------------------------------------------------------------------------------
+\end{document}
